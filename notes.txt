@@ -1,0 +1,22 @@
+#Structure des dossiers
+
+Dans database, nous rangerons nos ressoures (fichier de sauvegarde, sons, images et autres)
+dans Dao, nous rangerons les fonctions qui interagissent avec le dossier Dao
+
+#Structure de données 
+
+Utilisateur [id, nom, prenom, age, login, password, score max]
+Creation de compte --> [nom, prenom, age, login, password] {la fonction renvoie un boolean}(id est auto-généré et le score par defaut est 0)
+Connexion --> [login, password] {la fonction renvoie un tableau avec les données de l utilisateur}
+UpdateUserData --> [userConnected[]]
+//**
+/
+/ Lors de la partie, le score max peut changer donc à la fin de la partie, on sauvegarde le score max 
+/ pour le faire, modifie la valeur du score max dans le tableau qui a été renvoyé lors de la connexion 
+/ et on passe ce tableau en parametre à la fonction updateUserData
+/
+//**
+
+
+#loique algorithmique du jeu à definir
+
